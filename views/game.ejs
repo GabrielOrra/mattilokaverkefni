@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+</head>
+<body>
+    <h1>
+        card game
+    </h1>
+    <h2>
+        <a href="">scoreboard</a>
+    </h2>
+    <div id="game">
+        <div id="cardButtons">
+            <%  %>
+            <% for (var i=0; i<cards.length; i++) {%>
+                <button type="submit">
+                    <img src="/images/cardImages/<%= cards[i] %>.png" alt="card image">
+                </button>
+                <% if (i == 3) { %>
+                    <br>
+                <% } %>
+            <% } %>
+            <br>
+            <button type="submit" id="reset" onclick="reloadDeck()">
+                reset.
+            </button>
+            <script>function reloadDeck() {location.reload}</script>
+        </div>
+    </div>
+    <p id="current">
+        current score: 
+    </p>
+</body>
+</html>
