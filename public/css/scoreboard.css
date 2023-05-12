@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
+@font-face {
+    font-family: "Honoria";
+    src: url("Honoria-Regular.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+  
+body {
+    background-color: #f4f0db;
+    background-image: url(/images/baroque\(h\).png);
+    background-size: auto 740px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: relative;
+}
+
+
+
+p {
+    
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: 'Honoria';
+    font-size: 42pt; 
+}
+#scoreandrulestext {
+    margin-top: 0;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    font-family: 'Honoria';
+    font-size: 25pt; 
+  
+  }
+  
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+table {
+    margin-left: 800px;
+    border: #000 1px solid;
+    border-radius: 10px;
+    border-collapse: collapse;
+    background-color: white;
+    position:absolute;
+}
+
+td, th {
+    font-size: 23pt;
+    font-family: 'Roboto Mono';
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+#scoreboardtop {
+    background-color: bisque ;
+}
+
+
+#baroque {
+    position:absolute; 
+    top: 0px;
+    right: 0px;
+    width: auto; 
+    height: 740px;
+    
+}
+  
+#pagebreak {
+    text-align: center;
+    position: absolute;
+}

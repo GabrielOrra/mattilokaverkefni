@@ -1,8 +1,3 @@
-// This file is our "controller file" and is responsible for
-// handling all of our routes
-// and rendering our views.
-
-// kemur í prófi
 const express = require("express");
 const path = require("path");
 require("colors");
@@ -10,7 +5,7 @@ const session = require("express-session");
 
 const indexPage = require("./routes/index");
 const gamePage = require("./routes/game");
-
+const scoreboardPage = require("./routes/scoreboard");
 const bufferPage = require("./routes/buffer");
 
 const app = express();
@@ -40,6 +35,7 @@ app.use(session({
 app.use("/", indexPage);
 app.use("/game", gamePage);
 app.use("/buffer", bufferPage);
+app.use("/scoreboard", scoreboardPage);
 
 // errors : page not found
 app.use((req, res, next) => {
